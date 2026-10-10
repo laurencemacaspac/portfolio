@@ -9,3 +9,6 @@
 .project-link{aspect-ratio:1.65;background:#e8ecf1}.project-link img{object-fit:cover;object-position:top center}.project-card:hover img{transform:scale(1.012)}
 @media(max-width:850px){.hero{min-height:510px;padding:70px 0}}
 @media(max-width:650px){.hero{min-height:540px;padding:64px 0;background-position:65% center}.hero::before{background:linear-gradient(90deg,rgba(8,18,32,.93),rgba(8,18,32,.7))}.hero h1{letter-spacing:-1.9px}.project-grid{grid-template-columns:1fr}}
+
+/* Hero photo positioning adjustment only: shift the laptop right without changing the layout or project cards. */
+@media (min-width: 851px) { .hero { background-size: 115% auto; background-position: left center; } }

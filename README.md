@@ -16,3 +16,5 @@ Upload the contents of this folder (`index.html`, `styles.css`, `script.js`, and
 
 ## Notes
 The hero uses a photographic background hosted by Unsplash; it requires an internet connection. The seven project screenshot images are local and do not require an external service. Update links or descriptions in `script.js`. Replace the generic Upwork contact link in `index.html` with your own profile.
+
+Hero update: the existing photographic background is shifted right via styles.css. All other content and the seven screenshots are unchanged.
