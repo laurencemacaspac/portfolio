@@ -26,3 +26,13 @@
   .project-visual { aspect-ratio:437 / 947; background:#fff; }
   .project-visual picture img { object-fit:contain; object-position:center top; }
 }
+
+/* Requested refinements: square screenshots and controls; centered labels; no diagonal arrows. */
+.project-card, .project-visual, .project-visual img, .project-visual picture,
+.project-visual .fallback, .fallback .mini-browser, .site-header nav a:last-child,
+.button, .filter, .visit-overlay, .tags span, .skill-list span {border-radius:0 !important;}
+.project-visual picture {display:block;width:100%;height:100%;overflow:hidden;}
+.project-visual picture img {display:block;width:100%;height:100%;object-fit:contain;object-position:center top;}
+.button, .site-header nav a:last-child, .filter {justify-content:center !important;text-align:center !important;}
+.hero-actions .text-link, .about-copy .text-link {text-align:center;}
+.visit-overlay {display:none !important;}
