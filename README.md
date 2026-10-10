@@ -1,17 +1,19 @@
-# Laurence Macaspac — Portfolio
+# Laurence Macaspac — Minimal Portfolio
 
-A polished, responsive, zero-build portfolio website. Open `index.html` in a browser or deploy the directory to Vercel as a static site.
+This is a complete responsive static website. No npm install or build command is needed.
 
-## Customize before publishing
+## Preview
+Open `index.html` in Safari, or run `python3 -m http.server 8000` inside this folder and visit http://localhost:8000.
 
-1. Open `script.js`. The `projects` array contains seven cards. Replace `Halloween Store` with your seventh website.
-2. Add your verified Noisebox deployment URL in the first project's `url` field (currently empty to avoid linking to an unverified address).
-3. Add real screenshots to `assets/` with these exact names: `noisebox.jpg`, `lc.jpg`, `wizardry.jpg`, `foodtruck.jpg`, `kane.jpg`, `rental.jpg`, `halloween.jpg`. Each screenshot should ideally be ~1440x950 pixels, JPEG or WebP. The site shows elegant styled placeholders until screenshots are added.
-4. Replace `hello@example.com` in `script.js` with your public contact email.
-5. Confirm each live link before publishing; demo URLs are based on previously shared project details and may have changed.
+## Homepage screenshots
+Each project card is configured to request a **real screenshot of the public website** using WordPress mShots (`s.wordpress.com/mshots/v1`). The screenshot service is third-party and may load slowly or fail on some sites. If unavailable, the site displays a labeled fallback, **not a fake screenshot**. This environment couldn't independently verify the screenshots.
 
-## Deploy to Vercel
+For the most reliable result, take your own screenshots of each live homepage, crop them to 1200 × 690 (or similar), save them as `assets/noisebox.jpg`, `assets/lc.jpg`, `assets/wizardry.jpg`, `assets/foodtruck.jpg`, `assets/kane.jpg`, `assets/rental.jpg`, `assets/halloween.jpg`, and change the `img.src` line in `script.js` to `img.src = 'assets/' + project.slug + '.jpg';`.
 
-Upload `index.html`, `styles.css`, `script.js`, and `assets/` to your GitHub `portfolio` repository. Import that repository as a new project in Vercel. Choose **Other** as framework preset if asked. No build command or environment variables are needed.
+## Update content
+- Edit the `projects` array in `script.js` to update the seven links and descriptions.
+- Replace the placeholder Upwork contact link in `index.html` with your own profile or a `mailto:` link.
+- Hero laptop-and-coffee illustration is `assets/desk-illustration.svg` and can be replaced with a photo if preferred.
 
-Do not overwrite existing repository files without reviewing them first.
+## GitHub / Vercel
+Upload `index.html`, `styles.css`, `script.js`, and the `assets` folder to your existing `laurencemacaspac/portfolio` GitHub repository. In Vercel import the **existing repository** (don't create another repository with the same name). Framework preset: **Other**. Root: `./`. No build command. Do not overwrite any existing files before reviewing them.
