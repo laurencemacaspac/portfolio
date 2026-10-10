@@ -1,18 +1,18 @@
 # Laurence Macaspac — Portfolio
 
-## What changed
-- Hero illustration replaced with a photographic laptop workspace image (loaded from Unsplash).
-- Seven project cards now use local screenshot files in `assets/` rather than the unreliable screenshot service.
-- Clickable previews open the corresponding Vercel sites.
+Ready-to-upload static portfolio site. The seven **real user-supplied homepage screenshots** are already cropped and bundled under `assets/*.jpg`. Browser chrome, tabs, macOS menu bar, and Dock were removed.
 
-## Capture actual screenshots on your Mac
-1. Unzip this folder.
-2. Double-click `capture-screenshots.command` (if macOS blocks it, right-click > Open).
-3. The script uses Playwright via npx to capture the seven live websites at desktop size and save `assets/noisebox.png`, `assets/lc.png`, etc. It may download Chromium on first run.
-4. Open `index.html` in Safari. Verify the cards show the actual screenshots.
-5. Upload `index.html`, `styles.css`, `script.js`, and the entire `assets/` folder to your existing GitHub `portfolio` repository. You do not need to upload the capture script.
-6. Vercel will redeploy when your connected repository changes.
+## Publish
+Upload the contents of this folder (`index.html`, `styles.css`, `script.js`, and the complete `assets` directory) to the root of your existing `portfolio` GitHub repository. Vercel should deploy it as a static site (Framework Preset: Other; Build Command: blank; Output Directory: blank).
 
-If a capture fails, visit that website in Safari, take a screenshot, and save it with the matching filename (see script.js). Before screenshots are generated, labeled fallback previews appear; these are not actual screenshots.
+## Project order
+1. LC Mortgage Talent
+2. Wizardry Tutoring
+3. Food Truck & Catering
+4. Kane Construction
+5. Rental Property
+6. Halloween Store
+7. Noisebox Marketplace
 
-The hero photo is an external Unsplash image. To make it fully self-contained, download a licensed photo and update its src in index.html.
+## Notes
+The hero uses a photographic background hosted by Unsplash; it requires an internet connection. The seven project screenshot images are local and do not require an external service. Update links or descriptions in `script.js`. Replace the generic Upwork contact link in `index.html` with your own profile.
