@@ -15,3 +15,6 @@
 .project-visual .visit-overlay { z-index: 2; }
 .contact-section { background: #4EA8FF; }
 @media (max-width: 720px) { .project-grid { grid-template-columns: 1fr; } .project-visual { aspect-ratio: 1.70; } }
+
+/* Requested change only: square corners on cards, screenshots, CTAs, and buttons. */
+.project-card, .project-visual, .project-visual img, .project-visual .fallback, .fallback .mini-browser, .site-header nav a:last-child, .button, .filter, .visit-overlay, .tags span, .skill-list span { border-radius: 0 !important; }
