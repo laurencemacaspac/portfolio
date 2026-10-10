@@ -18,3 +18,11 @@
 
 /* Requested change only: square corners on cards, screenshots, CTAs, and buttons. */
 .project-card, .project-visual, .project-visual img, .project-visual .fallback, .fallback .mini-browser, .site-header nav a:last-child, .button, .filter, .visit-overlay, .tags span, .skill-list span { border-radius: 0 !important; }
+
+/* Mobile project screenshots: use actual mobile captures without changing desktop cards. */
+.project-visual picture { display:block; width:100%; height:100%; }
+.project-visual picture img { width:100%; height:100%; object-fit:contain; object-position:center top; }
+@media (max-width:720px) {
+  .project-visual { aspect-ratio:437 / 947; background:#fff; }
+  .project-visual picture img { object-fit:contain; object-position:center top; }
+}
