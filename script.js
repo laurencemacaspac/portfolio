@@ -14,9 +14,8 @@ for(const project of projects){
  const card=document.createElement('article');card.className='project-card';
  const link=document.createElement('a');link.className='project-link';link.href=project.url;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label',`Open ${project.name} live website`);
  const img=document.createElement('img');img.alt=`Homepage preview of ${project.name}`;img.loading='lazy';
- // mShots produces actual captures of public sites, rather than invented mockups.
- // Replace with your own assets/<slug>.jpg for faster, reliable previews.
- img.src=`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.url)}?w=1200`;
+ // Locally captured screenshots: run capture-screenshots.command on your Mac.
+ img.src=`assets/${project.slug}.png`;
  img.onerror=()=>{img.onerror=null;img.src=`assets/preview-${project.slug}.svg`};
  link.append(img);const arrow=document.createElement('span');arrow.className='arrow';arrow.textContent='↗';arrow.setAttribute('aria-hidden','true');link.append(arrow);
  const info=document.createElement('div');info.className='project-info';const h=document.createElement('h3');h.textContent=project.name;const p=document.createElement('p');p.textContent=project.description;const tags=document.createElement('div');tags.className='tags';for(const tag of project.tags){const t=document.createElement('span');t.textContent=tag;tags.append(t)}info.append(h,p,tags);card.append(link,info);grid.append(card)
