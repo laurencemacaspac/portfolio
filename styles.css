@@ -36,3 +36,10 @@
 .button, .site-header nav a:last-child, .filter {justify-content:center !important;text-align:center !important;}
 .hero-actions .text-link, .about-copy .text-link {text-align:center;}
 .visit-overlay {display:none !important;}
+
+/* Noisebox only: preserve the entire desktop/mobile screenshot without blank space. */
+.project-visual[href*="noisebox-store.vercel.app"] { aspect-ratio: 2048 / 1066; border-radius: 0 !important; }
+.project-visual[href*="noisebox-store.vercel.app"] picture img { object-fit: contain; }
+@media (max-width: 720px) {
+  .project-visual[href*="noisebox-store.vercel.app"] { aspect-ratio: 436 / 947; }
+}
