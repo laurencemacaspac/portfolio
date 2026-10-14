@@ -43,3 +43,6 @@
 @media (max-width: 720px) {
   .project-visual[href*="noisebox-store.vercel.app"] { aspect-ratio: 436 / 947; }
 }
+
+/* Portfolio project images: hard square corners across desktop and mobile. */
+.project-visual,.project-visual picture,.project-visual img,.project-visual .fallback { border-radius:0 !important; }

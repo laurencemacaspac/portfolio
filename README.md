@@ -1,7 +1,9 @@
-# Laurence Macaspac — Portfolio (original design, blue edition)
+# Portfolio update — 3 new concepts
 
-Original LM dark hero and orb, original full-width screenshot cards with titles and descriptions underneath, white Selected Work background, blue (#4EA8FF) in place of neon green, 2 desktop columns / 1 mobile column.
+Includes APEX, AFTERGLOW and ÉLAN project cards, live links, and desktop/mobile screenshots. All project screenshot corners are square. Project count updates automatically (10).
 
-The seven real screenshots are bundled under `assets/`. Deploy all files to the root of your existing GitHub portfolio repository.
+IMPORTANT: This package only includes the SIX NEW screenshot assets. Your existing seven project images are not supplied here. **Keep the other existing files in your repository's assets/ folder** when uploading this update. Do not delete your existing assets.
 
-Note: contact link still uses hello@example.com until you provide a preferred address.
+Upload index.html, script.js, styles.css and the six new images inside assets/ to your existing GitHub repository. Commit to trigger Vercel deployment.
+
+The screenshots were cropped from browser screenshots supplied by you. The APEX, AFTERGLOW and ÉLAN demos are independent concepts, not official client websites.
