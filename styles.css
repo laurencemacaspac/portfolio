@@ -46,3 +46,7 @@
 
 /* Portfolio project images: hard square corners across desktop and mobile. */
 .project-visual,.project-visual picture,.project-visual img,.project-visual .fallback { border-radius:0 !important; }
+
+/* Portfolio project captures: no browser chrome, natural screenshot proportions. */
+.project-visual, .project-visual picture, .project-visual picture img {border-radius:0 !important;}
+@media(max-width:720px){.project-visual{aspect-ratio:484 / 1039;} .project-visual picture img{object-fit:cover;object-position:top center;}}
