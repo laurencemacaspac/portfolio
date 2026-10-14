@@ -1,0 +1,1 @@
+Replace styles.css in your portfolio GitHub repository. index.html is included unchanged for convenience. All thumbnail frames use one desktop aspect ratio and one mobile aspect ratio; screenshots fill frames using object-fit:cover, so edges may crop. Any white area baked into an image itself must be cropped from the source image.

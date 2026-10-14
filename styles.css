@@ -50,3 +50,32 @@
 /* Portfolio project captures: no browser chrome, natural screenshot proportions. */
 .project-visual, .project-visual picture, .project-visual picture img {border-radius:0 !important;}
 @media(max-width:720px){.project-visual{aspect-ratio:484 / 1039;} .project-visual picture img{object-fit:cover;object-position:top center;}}
+
+/* Uniform portfolio thumbnails: identical frames, no bottom letterboxing. */
+.project-grid .project-visual,
+.project-grid .project-visual[href*="noisebox-store.vercel.app"] {
+  aspect-ratio: 1.70 !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+  padding: 0;
+}
+.project-grid .project-visual picture,
+.project-grid .project-visual img,
+.project-grid .project-visual picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 !important;
+}
+.project-grid .project-visual img,
+.project-grid .project-visual picture img,
+.project-grid .project-visual[href*="noisebox-store.vercel.app"] picture img {
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+@media (max-width: 720px) {
+  .project-grid .project-visual,
+  .project-grid .project-visual[href*="noisebox-store.vercel.app"] {
+    aspect-ratio: 484 / 1039 !important;
+  }
+}
