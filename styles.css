@@ -79,3 +79,15 @@
     aspect-ratio: 484 / 1039 !important;
   }
 }
+
+
+/* Fix three desktop screenshots whose left edges were cropped by object-fit: cover.
+   Preserve the uniform 1.70:1 frame and eliminate blank padding. */
+@media (min-width: 721px) {
+  .project-grid .project-visual[href*="apex-performance-demo-sigma.vercel.app"] img,
+  .project-grid .project-visual[href*="wizardry-tutoring-demo.vercel.app"] img,
+  .project-grid .project-visual[href*="halloween-client-demo.vercel.app"] img {
+    object-fit: fill !important;
+    object-position: center !important;
+  }
+}
