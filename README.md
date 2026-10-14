@@ -1,1 +1,3 @@
 Portfolio update: corrected APEX, AFTERGLOW, and ÉLAN screenshots and project mapping. Desktop images show the desktop homepage; mobile images are tightly cropped to the phone website viewport, excluding browser/DevTools UI. All project screenshots retain square corners. Upload index.html, script.js, styles.css and the six files in assets/ to your existing repository, keeping all other existing assets.
+
+Homepage project order: 1. ELAN Wellness Journal, 2. AFTERGLOW City Guide, 3. APEX Performance & Recovery.
